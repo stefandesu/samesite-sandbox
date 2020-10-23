@@ -1,3 +1,6 @@
+// Load configuration from .env
+require('dotenv').config()
+
 const express = require("express");
 const cp = require("cookie-parser");
 const app = express();
