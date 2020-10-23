@@ -3,13 +3,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SameSite 🍪 sandbox</title>
-  <link rel="canonical" href="https://samesite-sandbox.glitch.me/" />
+  <link rel="canonical" href="https://coli-conc.gbv.de/crosssite-test/" />
 
   <meta name="Description" content="Test SameSite cookie compatibility." />
   <meta name="theme-color" content="honeydew" />
   <link
     rel="shortcut icon"
-    href="https://cdn.glitch.com/e304e580-9956-4cb6-9f62-9e89ad6cd85f%2Fcookie.png?v=1572981153632"
+    href="./assets/cookie.png"
   />
 
   <meta name="twitter:card" content="summary" />
@@ -20,7 +20,7 @@
     content="Test SameSite cookie compatibility"
   />
 
-  <meta property="og:url" content="https://samesite-sandbox.glitch.me/" />
+  <meta property="og:url" content="https://coli-conc.gbv.de/crosssite-test/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="SameSite 🍪 sandbox" />
   <meta
@@ -268,7 +268,7 @@
     var showingResults = false;
 
     function receiveMessage(event) {
-      if (event.origin !== "https://googlechromelabs.github.io") {
+      if (event.origin !== "https://exo.pm") {
         return;
       }
 
@@ -368,7 +368,7 @@
     var crossSiteFrame = document.createElement("iframe");
     crossSiteFrame.setAttribute(
       "src",
-      "https://googlechromelabs.github.io/samesite-examples/crosssite-embed.html"
+      "https://exo.pm/samesite-examples/crosssite-embed.html"
     );
     document.body.appendChild(crossSiteFrame);
   </script>
