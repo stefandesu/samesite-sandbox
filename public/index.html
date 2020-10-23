@@ -274,7 +274,9 @@
 
       var requestMethod = event.data.method;
       var csCookies = event.data.cookies;
+      console.log("actual cookies:", csCookies)
       var expectedCookies = cookieMap[requestMethod];
+      console.log("expected cookies:", expectedCookies)
       var expectedCookieNames = Object.keys(expectedCookies);
 
       if (!showingResults) {
